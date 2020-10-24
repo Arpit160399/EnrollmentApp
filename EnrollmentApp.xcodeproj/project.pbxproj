@@ -1,0 +1,598 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		834E7A5925447019000D6256 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834E7A5825447019000D6256 /* AppDelegate.swift */; };
+		834E7A5B25447019000D6256 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834E7A5A25447019000D6256 /* SceneDelegate.swift */; };
+		834E7A5D25447019000D6256 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834E7A5C25447019000D6256 /* ViewController.swift */; };
+		834E7A6025447019000D6256 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 834E7A5E25447019000D6256 /* Main.storyboard */; };
+		834E7A622544701F000D6256 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 834E7A612544701F000D6256 /* Assets.xcassets */; };
+		834E7A652544701F000D6256 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 834E7A632544701F000D6256 /* LaunchScreen.storyboard */; };
+		834E7A702544701F000D6256 /* EnrollmentAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834E7A6F2544701F000D6256 /* EnrollmentAppTests.swift */; };
+		834E7A7B2544701F000D6256 /* EnrollmentAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834E7A7A2544701F000D6256 /* EnrollmentAppUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		834E7A6C2544701F000D6256 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 834E7A4D25447019000D6256 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 834E7A5425447019000D6256;
+			remoteInfo = EnrollmentApp;
+		};
+		834E7A772544701F000D6256 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 834E7A4D25447019000D6256 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 834E7A5425447019000D6256;
+			remoteInfo = EnrollmentApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		834E7A5525447019000D6256 /* EnrollmentApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EnrollmentApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		834E7A5825447019000D6256 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		834E7A5A25447019000D6256 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		834E7A5C25447019000D6256 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		834E7A5F25447019000D6256 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		834E7A612544701F000D6256 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		834E7A642544701F000D6256 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		834E7A662544701F000D6256 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		834E7A6B2544701F000D6256 /* EnrollmentAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EnrollmentAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		834E7A6F2544701F000D6256 /* EnrollmentAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnrollmentAppTests.swift; sourceTree = "<group>"; };
+		834E7A712544701F000D6256 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		834E7A762544701F000D6256 /* EnrollmentAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EnrollmentAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		834E7A7A2544701F000D6256 /* EnrollmentAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnrollmentAppUITests.swift; sourceTree = "<group>"; };
+		834E7A7C2544701F000D6256 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		834E7A5225447019000D6256 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		834E7A682544701F000D6256 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		834E7A732544701F000D6256 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		834E7A4C25447019000D6256 = {
+			isa = PBXGroup;
+			children = (
+				834E7A5725447019000D6256 /* EnrollmentApp */,
+				834E7A6E2544701F000D6256 /* EnrollmentAppTests */,
+				834E7A792544701F000D6256 /* EnrollmentAppUITests */,
+				834E7A5625447019000D6256 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		834E7A5625447019000D6256 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				834E7A5525447019000D6256 /* EnrollmentApp.app */,
+				834E7A6B2544701F000D6256 /* EnrollmentAppTests.xctest */,
+				834E7A762544701F000D6256 /* EnrollmentAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		834E7A5725447019000D6256 /* EnrollmentApp */ = {
+			isa = PBXGroup;
+			children = (
+				834E7A5825447019000D6256 /* AppDelegate.swift */,
+				834E7A5A25447019000D6256 /* SceneDelegate.swift */,
+				834E7A5C25447019000D6256 /* ViewController.swift */,
+				834E7A5E25447019000D6256 /* Main.storyboard */,
+				834E7A612544701F000D6256 /* Assets.xcassets */,
+				834E7A632544701F000D6256 /* LaunchScreen.storyboard */,
+				834E7A662544701F000D6256 /* Info.plist */,
+			);
+			path = EnrollmentApp;
+			sourceTree = "<group>";
+		};
+		834E7A6E2544701F000D6256 /* EnrollmentAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				834E7A6F2544701F000D6256 /* EnrollmentAppTests.swift */,
+				834E7A712544701F000D6256 /* Info.plist */,
+			);
+			path = EnrollmentAppTests;
+			sourceTree = "<group>";
+		};
+		834E7A792544701F000D6256 /* EnrollmentAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				834E7A7A2544701F000D6256 /* EnrollmentAppUITests.swift */,
+				834E7A7C2544701F000D6256 /* Info.plist */,
+			);
+			path = EnrollmentAppUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		834E7A5425447019000D6256 /* EnrollmentApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 834E7A7F2544701F000D6256 /* Build configuration list for PBXNativeTarget "EnrollmentApp" */;
+			buildPhases = (
+				834E7A5125447019000D6256 /* Sources */,
+				834E7A5225447019000D6256 /* Frameworks */,
+				834E7A5325447019000D6256 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = EnrollmentApp;
+			productName = EnrollmentApp;
+			productReference = 834E7A5525447019000D6256 /* EnrollmentApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		834E7A6A2544701F000D6256 /* EnrollmentAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 834E7A822544701F000D6256 /* Build configuration list for PBXNativeTarget "EnrollmentAppTests" */;
+			buildPhases = (
+				834E7A672544701F000D6256 /* Sources */,
+				834E7A682544701F000D6256 /* Frameworks */,
+				834E7A692544701F000D6256 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				834E7A6D2544701F000D6256 /* PBXTargetDependency */,
+			);
+			name = EnrollmentAppTests;
+			productName = EnrollmentAppTests;
+			productReference = 834E7A6B2544701F000D6256 /* EnrollmentAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		834E7A752544701F000D6256 /* EnrollmentAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 834E7A852544701F000D6256 /* Build configuration list for PBXNativeTarget "EnrollmentAppUITests" */;
+			buildPhases = (
+				834E7A722544701F000D6256 /* Sources */,
+				834E7A732544701F000D6256 /* Frameworks */,
+				834E7A742544701F000D6256 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				834E7A782544701F000D6256 /* PBXTargetDependency */,
+			);
+			name = EnrollmentAppUITests;
+			productName = EnrollmentAppUITests;
+			productReference = 834E7A762544701F000D6256 /* EnrollmentAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		834E7A4D25447019000D6256 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1210;
+				LastUpgradeCheck = 1210;
+				TargetAttributes = {
+					834E7A5425447019000D6256 = {
+						CreatedOnToolsVersion = 12.1;
+					};
+					834E7A6A2544701F000D6256 = {
+						CreatedOnToolsVersion = 12.1;
+						TestTargetID = 834E7A5425447019000D6256;
+					};
+					834E7A752544701F000D6256 = {
+						CreatedOnToolsVersion = 12.1;
+						TestTargetID = 834E7A5425447019000D6256;
+					};
+				};
+			};
+			buildConfigurationList = 834E7A5025447019000D6256 /* Build configuration list for PBXProject "EnrollmentApp" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 834E7A4C25447019000D6256;
+			productRefGroup = 834E7A5625447019000D6256 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				834E7A5425447019000D6256 /* EnrollmentApp */,
+				834E7A6A2544701F000D6256 /* EnrollmentAppTests */,
+				834E7A752544701F000D6256 /* EnrollmentAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		834E7A5325447019000D6256 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				834E7A652544701F000D6256 /* LaunchScreen.storyboard in Resources */,
+				834E7A622544701F000D6256 /* Assets.xcassets in Resources */,
+				834E7A6025447019000D6256 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		834E7A692544701F000D6256 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		834E7A742544701F000D6256 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		834E7A5125447019000D6256 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				834E7A5D25447019000D6256 /* ViewController.swift in Sources */,
+				834E7A5925447019000D6256 /* AppDelegate.swift in Sources */,
+				834E7A5B25447019000D6256 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		834E7A672544701F000D6256 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				834E7A702544701F000D6256 /* EnrollmentAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		834E7A722544701F000D6256 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				834E7A7B2544701F000D6256 /* EnrollmentAppUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		834E7A6D2544701F000D6256 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 834E7A5425447019000D6256 /* EnrollmentApp */;
+			targetProxy = 834E7A6C2544701F000D6256 /* PBXContainerItemProxy */;
+		};
+		834E7A782544701F000D6256 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 834E7A5425447019000D6256 /* EnrollmentApp */;
+			targetProxy = 834E7A772544701F000D6256 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		834E7A5E25447019000D6256 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				834E7A5F25447019000D6256 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		834E7A632544701F000D6256 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				834E7A642544701F000D6256 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		834E7A7D2544701F000D6256 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		834E7A7E2544701F000D6256 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		834E7A802544701F000D6256 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2AA7VP743Q;
+				INFOPLIST_FILE = EnrollmentApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.world.EnrollmentApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		834E7A812544701F000D6256 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2AA7VP743Q;
+				INFOPLIST_FILE = EnrollmentApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.world.EnrollmentApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		834E7A832544701F000D6256 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2AA7VP743Q;
+				INFOPLIST_FILE = EnrollmentAppTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.world.EnrollmentAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EnrollmentApp.app/EnrollmentApp";
+			};
+			name = Debug;
+		};
+		834E7A842544701F000D6256 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2AA7VP743Q;
+				INFOPLIST_FILE = EnrollmentAppTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.world.EnrollmentAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EnrollmentApp.app/EnrollmentApp";
+			};
+			name = Release;
+		};
+		834E7A862544701F000D6256 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2AA7VP743Q;
+				INFOPLIST_FILE = EnrollmentAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.world.EnrollmentAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = EnrollmentApp;
+			};
+			name = Debug;
+		};
+		834E7A872544701F000D6256 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2AA7VP743Q;
+				INFOPLIST_FILE = EnrollmentAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.world.EnrollmentAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = EnrollmentApp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		834E7A5025447019000D6256 /* Build configuration list for PBXProject "EnrollmentApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				834E7A7D2544701F000D6256 /* Debug */,
+				834E7A7E2544701F000D6256 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		834E7A7F2544701F000D6256 /* Build configuration list for PBXNativeTarget "EnrollmentApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				834E7A802544701F000D6256 /* Debug */,
+				834E7A812544701F000D6256 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		834E7A822544701F000D6256 /* Build configuration list for PBXNativeTarget "EnrollmentAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				834E7A832544701F000D6256 /* Debug */,
+				834E7A842544701F000D6256 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		834E7A852544701F000D6256 /* Build configuration list for PBXNativeTarget "EnrollmentAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				834E7A862544701F000D6256 /* Debug */,
+				834E7A872544701F000D6256 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 834E7A4D25447019000D6256 /* Project object */;
+}
