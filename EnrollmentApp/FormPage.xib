@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="XQe-yo-rrY">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TVE-4d-lL8">
+                    <rect key="frame" x="0.0" y="44" width="414" height="920"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="6AO-Ry-BhU">
+                            <rect key="frame" x="16.5" y="210" width="381" height="690"/>
+                            <subviews>
+                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="First Name " textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="MZq-Kf-ZxA">
+                                    <rect key="frame" x="0.0" y="0.0" width="381" height="60"/>
+                                    <color key="tintColor" systemColor="systemBlueColor"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="60" id="STU-hO-bW2"/>
+                                    </constraints>
+                                    <color key="textColor" name="AccentColor"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="color" keyPath="layer.borderColor">
+                                            <color key="value" name="AccentColor"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </textField>
+                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Last Name " textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="svS-xX-GpH">
+                                    <rect key="frame" x="0.0" y="70" width="381" height="60"/>
+                                    <color key="tintColor" systemColor="systemBlueColor"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="60" id="UkX-tH-h93"/>
+                                    </constraints>
+                                    <color key="textColor" name="AccentColor"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="color" keyPath="layer.borderColor">
+                                            <color key="value" name="AccentColor"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </textField>
+                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Date of Birth" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vJ7-Si-Yb0">
+                                    <rect key="frame" x="0.0" y="140" width="381" height="60"/>
+                                    <color key="tintColor" systemColor="systemBlueColor"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="60" id="NOq-WP-3mQ"/>
+                                    </constraints>
+                                    <color key="textColor" name="AccentColor"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="color" keyPath="layer.borderColor">
+                                            <color key="value" name="AccentColor"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </textField>
+                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Gender" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nyU-ky-Nfk">
+                                    <rect key="frame" x="0.0" y="210" width="381" height="60"/>
+                                    <color key="tintColor" systemColor="systemBlueColor"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="60" id="zFc-tn-KCp"/>
+                                    </constraints>
+                                    <color key="textColor" name="AccentColor"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="color" keyPath="layer.borderColor">
+                                            <color key="value" name="AccentColor"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </textField>
+                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Country" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kbA-R6-ufd">
+                                    <rect key="frame" x="0.0" y="280" width="381" height="60"/>
+                                    <color key="tintColor" systemColor="systemBlueColor"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="60" id="JWm-xm-AWd"/>
+                                    </constraints>
+                                    <color key="textColor" name="AccentColor"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="color" keyPath="layer.borderColor">
+                                            <color key="value" name="AccentColor"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </textField>
+                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="State" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jh1-7l-mdi">
+                                    <rect key="frame" x="0.0" y="350" width="381" height="60"/>
+                                    <color key="tintColor" systemColor="systemBlueColor"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="60" id="HZX-f0-71Z"/>
+                                    </constraints>
+                                    <color key="textColor" name="AccentColor"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="color" keyPath="layer.borderColor">
+                                            <color key="value" name="AccentColor"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </textField>
+                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Home Town" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0IZ-b3-JM9">
+                                    <rect key="frame" x="0.0" y="420" width="381" height="60"/>
+                                    <color key="tintColor" systemColor="systemBlueColor"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="60" id="8XB-1N-Rs7"/>
+                                    </constraints>
+                                    <color key="textColor" name="AccentColor"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="color" keyPath="layer.borderColor">
+                                            <color key="value" name="AccentColor"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </textField>
+                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Home Town" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="h6y-eN-ZTv">
+                                    <rect key="frame" x="0.0" y="490" width="381" height="60"/>
+                                    <color key="tintColor" systemColor="systemBlueColor"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="60" id="F5K-XZ-wMo"/>
+                                    </constraints>
+                                    <color key="textColor" name="AccentColor"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="color" keyPath="layer.borderColor">
+                                            <color key="value" name="AccentColor"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </textField>
+                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Phone Number" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="X1H-78-7jJ">
+                                    <rect key="frame" x="0.0" y="560" width="381" height="60"/>
+                                    <color key="tintColor" systemColor="systemBlueColor"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="60" id="ncy-Zt-DYo"/>
+                                    </constraints>
+                                    <color key="textColor" name="AccentColor"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="color" keyPath="layer.borderColor">
+                                            <color key="value" name="AccentColor"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </textField>
+                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="telPhonw" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fvr-dJ-phg">
+                                    <rect key="frame" x="0.0" y="630" width="381" height="60"/>
+                                    <color key="tintColor" systemColor="systemBlueColor"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="60" id="YQH-Az-MnR"/>
+                                    </constraints>
+                                    <color key="textColor" name="AccentColor"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="color" keyPath="layer.borderColor">
+                                            <color key="value" name="AccentColor"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </textField>
+                            </subviews>
+                        </stackView>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="krC-mj-hg6">
+                            <rect key="frame" x="137" y="10" width="140" height="140"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="140" id="SvL-AY-fs0"/>
+                                <constraint firstAttribute="height" constant="140" id="TNx-gj-4Ze"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select Profile Image" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u3O-Tj-iC8">
+                            <rect key="frame" x="94.5" y="160" width="225.5" height="30"/>
+                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="25"/>
+                            <color key="textColor" name="AccentColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="0.52087014909999996" green="0.67197561260000005" blue="0.81183290480000003" alpha="0.36290667808219179" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="6AO-Ry-BhU" firstAttribute="top" secondItem="u3O-Tj-iC8" secondAttribute="bottom" constant="20" id="1xA-E0-F9z"/>
+                        <constraint firstItem="u3O-Tj-iC8" firstAttribute="top" secondItem="krC-mj-hg6" secondAttribute="bottom" constant="10" id="2BZ-2V-hhA"/>
+                        <constraint firstItem="TQ2-T1-rh7" firstAttribute="bottom" secondItem="6AO-Ry-BhU" secondAttribute="bottom" constant="20" id="AX0-R6-19O"/>
+                        <constraint firstAttribute="trailing" secondItem="6AO-Ry-BhU" secondAttribute="trailing" constant="15" id="G6C-VZ-ou9"/>
+                        <constraint firstItem="krC-mj-hg6" firstAttribute="centerX" secondItem="u3O-Tj-iC8" secondAttribute="centerX" id="aPo-gO-Wq0"/>
+                        <constraint firstAttribute="bottom" secondItem="6AO-Ry-BhU" secondAttribute="bottom" constant="20" id="fP0-zs-qBg"/>
+                        <constraint firstItem="krC-mj-hg6" firstAttribute="top" secondItem="TQ2-T1-rh7" secondAttribute="top" constant="10" id="kn6-IU-MU4"/>
+                        <constraint firstItem="u3O-Tj-iC8" firstAttribute="centerX" secondItem="6AO-Ry-BhU" secondAttribute="centerX" id="lJl-Ej-kSp"/>
+                        <constraint firstItem="6AO-Ry-BhU" firstAttribute="centerX" secondItem="TVE-4d-lL8" secondAttribute="centerX" id="oYY-O2-PaS"/>
+                    </constraints>
+                    <viewLayoutGuide key="contentLayoutGuide" id="aYi-TN-YRR"/>
+                    <viewLayoutGuide key="frameLayoutGuide" id="TQ2-T1-rh7"/>
+                </scrollView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I0l-3b-qLb">
+                    <rect key="frame" x="10" y="826" width="394" height="50"/>
+                    <color key="backgroundColor" name="AccentColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="bBw-lp-vLc"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                    <state key="normal" title="ADD USER">
+                        <color key="titleColor" systemColor="secondarySystemGroupedBackgroundColor"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.corner">
+                            <integer key="value" value="4"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="dr5-2E-LTs"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="dr5-2E-LTs" firstAttribute="trailing" secondItem="I0l-3b-qLb" secondAttribute="trailing" constant="10" id="4ej-pi-LxX"/>
+                <constraint firstItem="TVE-4d-lL8" firstAttribute="top" secondItem="dr5-2E-LTs" secondAttribute="top" id="7Fe-HH-pXV"/>
+                <constraint firstAttribute="trailing" secondItem="TVE-4d-lL8" secondAttribute="trailing" id="8qC-ZT-AW8"/>
+                <constraint firstItem="TVE-4d-lL8" firstAttribute="leading" secondItem="XQe-yo-rrY" secondAttribute="leading" id="Abp-iX-FKv"/>
+                <constraint firstAttribute="bottom" secondItem="I0l-3b-qLb" secondAttribute="bottom" constant="20" id="aU6-fH-GUK"/>
+                <constraint firstItem="I0l-3b-qLb" firstAttribute="leading" secondItem="dr5-2E-LTs" secondAttribute="leading" constant="10" id="mHL-75-R9c"/>
+                <constraint firstItem="TVE-4d-lL8" firstAttribute="width" secondItem="dr5-2E-LTs" secondAttribute="width" id="p9P-70-AIf"/>
+                <constraint firstItem="6AO-Ry-BhU" firstAttribute="width" secondItem="dr5-2E-LTs" secondAttribute="width" multiplier="0.92" id="qwL-Tm-6cR"/>
+            </constraints>
+            <point key="canvasLocation" x="-430.43478260869568" y="-1250.2232142857142"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="AccentColor">
+            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="secondarySystemGroupedBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

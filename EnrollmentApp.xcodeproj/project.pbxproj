@@ -15,6 +15,8 @@
 		834E7A652544701F000D6256 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 834E7A632544701F000D6256 /* LaunchScreen.storyboard */; };
 		834E7A702544701F000D6256 /* EnrollmentAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834E7A6F2544701F000D6256 /* EnrollmentAppTests.swift */; };
 		834E7A7B2544701F000D6256 /* EnrollmentAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834E7A7A2544701F000D6256 /* EnrollmentAppUITests.swift */; };
+		834E7A94254529DE000D6256 /* ProfileCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 834E7A93254529DE000D6256 /* ProfileCell.xib */; };
+		834E7A9925453137000D6256 /* FormPage.xib in Resources */ = {isa = PBXBuildFile; fileRef = 834E7A9825453137000D6256 /* FormPage.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		834E7A762544701F000D6256 /* EnrollmentAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EnrollmentAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		834E7A7A2544701F000D6256 /* EnrollmentAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnrollmentAppUITests.swift; sourceTree = "<group>"; };
 		834E7A7C2544701F000D6256 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		834E7A93254529DE000D6256 /* ProfileCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileCell.xib; sourceTree = "<group>"; };
+		834E7A9825453137000D6256 /* FormPage.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FormPage.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +107,8 @@
 				834E7A5A25447019000D6256 /* SceneDelegate.swift */,
 				834E7A5C25447019000D6256 /* ViewController.swift */,
 				834E7A5E25447019000D6256 /* Main.storyboard */,
+				834E7A93254529DE000D6256 /* ProfileCell.xib */,
+				834E7A9825453137000D6256 /* FormPage.xib */,
 				834E7A612544701F000D6256 /* Assets.xcassets */,
 				834E7A632544701F000D6256 /* LaunchScreen.storyboard */,
 				834E7A662544701F000D6256 /* Info.plist */,
@@ -231,7 +237,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				834E7A9925453137000D6256 /* FormPage.xib in Resources */,
 				834E7A652544701F000D6256 /* LaunchScreen.storyboard in Resources */,
+				834E7A94254529DE000D6256 /* ProfileCell.xib in Resources */,
 				834E7A622544701F000D6256 /* Assets.xcassets in Resources */,
 				834E7A6025447019000D6256 /* Main.storyboard in Resources */,
 			);
