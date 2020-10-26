@@ -21,28 +21,29 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Demo Application" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xym-Fl-JxX">
                                 <rect key="frame" x="106.5" y="54" width="201.5" height="30"/>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="25"/>
-                                <color key="textColor" name="AccentColor"/>
+                                <color key="textColor" name="pirmaryColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yJG-Mo-VDe">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yJG-Mo-VDe" customClass="SegmentControlView" customModule="EnrollmentApp" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="89" width="414" height="50"/>
-                                <color key="backgroundColor" systemColor="systemBlueColor"/>
+                                <color key="backgroundColor" systemColor="tertiarySystemBackgroundColor"/>
+                                <color key="tintColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="xKP-UC-XaV"/>
                                 </constraints>
                             </view>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="4u9-NE-zVZ">
-                                <rect key="frame" x="0.0" y="141" width="414" height="721"/>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="4u9-NE-zVZ">
+                                <rect key="frame" x="0.0" y="139" width="414" height="757"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="V9M-8K-clc">
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="V9M-8K-clc">
                                     <size key="itemSize" width="410" height="728"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="hon-Rs-rsH">
-                                        <rect key="frame" x="2" y="0.0" width="410" height="728"/>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ViewerCellID" id="hon-Rs-rsH" customClass="ViewerCell" customModule="EnrollmentApp" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="14.5" width="410" height="728"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="vDS-tV-lw5">
                                             <rect key="frame" x="0.0" y="0.0" width="410" height="728"/>
@@ -51,22 +52,30 @@
                                         <size key="customSize" width="410" height="728"/>
                                     </collectionViewCell>
                                 </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="Y0X-wg-mot"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="smT-1b-tio"/>
+                                </connections>
                             </collectionView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="4u9-NE-zVZ" firstAttribute="top" secondItem="yJG-Mo-VDe" secondAttribute="bottom" constant="2" id="1R5-CE-GC9"/>
+                            <constraint firstItem="4u9-NE-zVZ" firstAttribute="top" secondItem="yJG-Mo-VDe" secondAttribute="bottom" id="1R5-CE-GC9"/>
                             <constraint firstItem="yJG-Mo-VDe" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="DZd-7C-WgI"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="yJG-Mo-VDe" secondAttribute="trailing" id="Q4m-dX-68v"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="4u9-NE-zVZ" secondAttribute="bottom" id="U63-ly-Ees"/>
+                            <constraint firstAttribute="bottom" secondItem="4u9-NE-zVZ" secondAttribute="bottom" id="U63-ly-Ees"/>
                             <constraint firstItem="yJG-Mo-VDe" firstAttribute="top" secondItem="xym-Fl-JxX" secondAttribute="bottom" constant="5" id="nb7-k0-VEM"/>
                             <constraint firstItem="xym-Fl-JxX" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="rLq-qn-UO8"/>
                             <constraint firstItem="xym-Fl-JxX" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="sUC-1X-w6v"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="4u9-NE-zVZ" secondAttribute="trailing" id="vtJ-7s-ggU"/>
-                            <constraint firstItem="4u9-NE-zVZ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="w2w-38-8UL"/>
+                            <constraint firstAttribute="trailing" secondItem="4u9-NE-zVZ" secondAttribute="trailing" id="vtJ-7s-ggU"/>
+                            <constraint firstItem="4u9-NE-zVZ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="w2w-38-8UL"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="collectionView" destination="4u9-NE-zVZ" id="jhA-rc-caI"/>
+                        <outlet property="segemetMenu" destination="yJG-Mo-VDe" id="pIA-SX-oIR"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -74,14 +83,14 @@
         </scene>
     </scenes>
     <resources>
-        <namedColor name="AccentColor">
-            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        <namedColor name="pirmaryColor">
+            <color red="0.34661340709999999" green="0.60650229450000004" blue="0.78806871180000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
-        <systemColor name="systemBlueColor">
-            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        <systemColor name="tertiarySystemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
     </resources>
 </document>

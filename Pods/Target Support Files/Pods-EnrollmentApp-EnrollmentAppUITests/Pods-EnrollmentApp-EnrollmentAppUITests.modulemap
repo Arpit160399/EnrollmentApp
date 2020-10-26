@@ -1,0 +1,6 @@
+framework module Pods_EnrollmentApp_EnrollmentAppUITests {
+  umbrella header "Pods-EnrollmentApp-EnrollmentAppUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
