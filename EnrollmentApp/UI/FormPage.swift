@@ -65,41 +65,71 @@ class FormPage: UIView {
     }
 
     @IBAction func AddUserData(_ sender: UIButton) {
-        let imageName = NSUUID().uuidString
-        let Stroage = Storage.storage().reference().child("Profile_Image").child("\(imageName).jpg")
+        
+        guard let gender = genderField.text else {
+            messageView.show(message: "enter gender", type: .error)
+            return
+        }
+        guard let homeField = HomeField.text else {
+            messageView.show(message: "enter Home address", type: .error)
+            return
+        }
+        guard let state = stateField.text else {
+            messageView.show(message: "enter state address", type: .error)
+            return
+        }
+        guard let country = countryField.text else {
+            messageView.show(message: "enter country", type: .error)
+            return
+        }
+        
         if NameVaildtion(), formDateField(), validaPhoneNumber() {
             let time: NSNumber = NSNumber(value: Int(NSDate().timeIntervalSince1970))
-            var userData = UserModel(firstName: fristNameField.text!, LastName: lastNameFiled.text!, phoneNumber: PhoneField.text!, telPhone: TelPhoneField.text!, DoB: dobFiled.text!, state: stateField.text!, profileImageUrl: "", country: countryField.text!, gender: genderField.text!, Home: HomeField.text!, creationTime: time)
             sender.isEnabled = false
             sender.alpha = 0.5
-            if let uploadImage = selectedImage?.jpegData(compressionQuality: 0.1) {
-                Stroage.putData(uploadImage, metadata: nil, completion: { _, error in
-                    if error != nil {
-                        self.messageView.show(message: error.debugDescription, type: .error)
-                        sender.isEnabled = true
-                        sender.alpha = 1
+            var userData = UserModel(firstName: fristNameField.text!, LastName: lastNameFiled.text!, phoneNumber: PhoneField.text!, telPhone: TelPhoneField.text!, DoB: dobFiled.text!, state: state, profileImageUrl: "", country: country, gender: gender, Home: homeField, creationTime: time)
+        if let uploadImage = selectedImage?.jpegData(compressionQuality: 0.1) {
+            saveImage(uploadImage) { (error, url) in
+                if error != nil {
+                    sender.isEnabled = true
+                    sender.alpha = 1
+                    self.messageView.show(message: error.debugDescription, type: .error)
+                }
+                guard let url = url else { return }
+                userData.profileImageUrl = url
+                self.saveData(userData.mapdata(), sender)
+            }
+        } else {
+            sender.isEnabled = true
+            sender.alpha = 1
+            messageView.show(message: "select the profile Image", type: .error)
+        }
+      }
+    }
+}
+//MARK:- Firebase Actions
+extension FormPage {
+    fileprivate func saveImage(_ uploadImage: Data,compiltion: @escaping (_ error:Error?,_ url: String?) -> ()){
+        let imageName = NSUUID().uuidString
+        let Stroage = Storage.storage().reference().child("Profile_Image").child("\(imageName).jpg")
+            Stroage.putData(uploadImage, metadata: nil, completion: { _, error in
+                if error != nil {
+                    compiltion(error,nil)
+                    return
+                }
+                Stroage.downloadURL(completion: { url, Error in
+                    if Error != nil {
+                        compiltion(Error,nil)
                         return
                     }
-                    Stroage.downloadURL(completion: { url, Error in
-                        if Error != nil {
-                            self.messageView.show(message: Error.debugDescription, type: .error)
-                            sender.isEnabled = true
-                            sender.alpha = 1
-                            return
-                        }
 
-                        guard let url = url else { return }
-                        userData.profileImageUrl = url.absoluteString
-                        self.saveData(userData.mapdata(), sender)
-                    })
+                    guard let url = url else { return }
+                    compiltion(nil,url.absoluteString)
                 })
-            } else {
-                messageView.show(message: "select the profile Image", type: .error)
-            }
-        }
+            })
     }
-
-    func saveData(_ newuser: [String: Any], _ sender: UIButton) {
+    
+   fileprivate func saveData(_ newuser: [String: Any], _ sender: UIButton) {
         let userRef = Database.database().reference().child("users").childByAutoId()
         userRef.setValue(newuser) { error, _ in
             if error != nil {
@@ -138,7 +168,7 @@ extension FormPage: UIImagePickerControllerDelegate, UINavigationControllerDeleg
     }
 }
 
-// KeyboredMangagement
+//MARK:-  KeyboredMangagement
 extension FormPage: UITextFieldDelegate {
     // MARK: add the event handelr for keyboard will appear
 
@@ -229,7 +259,7 @@ extension FormPage: UITextFieldDelegate {
 // MARK: - Form Vaildation
 
 extension FormPage {
-    func formDateField() -> Bool {
+   fileprivate func formDateField() -> Bool {
         guard let dob = dobFiled.text else {
             messageView.show(message: "enter Date of Birth", type: .error)
             return false
@@ -243,7 +273,7 @@ extension FormPage {
         return true
     }
 
-    func NameVaildtion() -> Bool {
+   fileprivate func NameVaildtion() -> Bool {
         guard let firstname = fristNameField.text else {
             messageView.show(message: "enter firstName", type: .error)
             return false
@@ -269,7 +299,7 @@ extension FormPage {
         return isValidateLastName || isValidateFirstName
     }
 
-    public func validaPhoneNumber() -> Bool {
+    fileprivate func validaPhoneNumber() -> Bool {
         guard let phone = PhoneField.text else {
             messageView.show(message: "enter  Phone Number", type: .error)
             return false
@@ -289,4 +319,5 @@ extension FormPage {
         }
         return true
     }
+    
 }

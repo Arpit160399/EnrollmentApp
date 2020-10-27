@@ -18,48 +18,51 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Ez9-7g-FrV">
-                        <rect key="frame" x="30" y="20" width="100" height="100"/>
+                        <rect key="frame" x="20" y="51.5" width="70" height="70"/>
                         <constraints>
-                            <constraint firstAttribute="width" secondItem="Ez9-7g-FrV" secondAttribute="height" multiplier="1:1" id="F0Q-V1-kzM"/>
-                            <constraint firstAttribute="height" constant="100" id="dif-F0-aaU"/>
+                            <constraint firstAttribute="height" constant="70" id="1RL-Dp-znl"/>
+                            <constraint firstAttribute="width" secondItem="Ez9-7g-FrV" secondAttribute="height" multiplier="1:1" id="66s-f7-qnW"/>
                         </constraints>
                     </imageView>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BuH-bq-6MW">
-                        <rect key="frame" x="150" y="49" width="446" height="14.5"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="top" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BuH-bq-6MW">
+                        <rect key="frame" x="110" y="88.5" width="456" height="14.5"/>
                         <fontDescription key="fontDescription" type="system" pointSize="12"/>
                         <color key="textColor" systemColor="systemGray2Color"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CPc-Y0-ct5">
-                        <rect key="frame" x="576" y="36.5" width="50" height="22"/>
+                        <rect key="frame" x="576" y="61.5" width="50" height="50"/>
                         <constraints>
-                            <constraint firstAttribute="width" constant="50" id="NRy-cF-LiD"/>
+                            <constraint firstAttribute="width" constant="50" id="Ztz-mV-BgH"/>
+                            <constraint firstAttribute="height" constant="50" id="eKp-Dm-bZh"/>
                         </constraints>
                         <color key="tintColor" name="pirmaryColor"/>
                         <state key="normal" image="xmark.bin.fill" catalog="system">
                             <color key="titleColor" name="pirmaryColor"/>
                         </state>
                     </button>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bdG-v7-j91">
-                        <rect key="frame" x="150" y="20" width="416" height="24"/>
-                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="1000" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bdG-v7-j91">
+                        <rect key="frame" x="110" y="65" width="446" height="19.5"/>
+                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
                         <color key="textColor" name="pirmaryColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                 </subviews>
                 <constraints>
-                    <constraint firstAttribute="trailingMargin" secondItem="BuH-bq-6MW" secondAttribute="trailing" constant="20" id="3xj-ch-LmI"/>
-                    <constraint firstItem="bdG-v7-j91" firstAttribute="leading" secondItem="Ez9-7g-FrV" secondAttribute="trailing" constant="20" id="Q0k-WD-b9n"/>
-                    <constraint firstItem="bdG-v7-j91" firstAttribute="top" secondItem="m7v-uq-0f8" secondAttribute="top" constant="20" id="RZ2-Ud-e1B"/>
-                    <constraint firstAttribute="bottomMargin" secondItem="BuH-bq-6MW" secondAttribute="bottom" constant="20" id="Wav-8Z-dEN"/>
-                    <constraint firstItem="Ez9-7g-FrV" firstAttribute="leading" secondItem="m7v-uq-0f8" secondAttribute="leading" constant="30" id="Zbf-hc-bmh"/>
-                    <constraint firstItem="BuH-bq-6MW" firstAttribute="top" secondItem="bdG-v7-j91" secondAttribute="bottom" constant="5" id="bMv-id-u1w"/>
-                    <constraint firstItem="CPc-Y0-ct5" firstAttribute="leading" secondItem="bdG-v7-j91" secondAttribute="trailing" constant="10" id="seT-Vn-jtR"/>
-                    <constraint firstItem="CPc-Y0-ct5" firstAttribute="centerY" secondItem="m7v-uq-0f8" secondAttribute="centerY" id="v99-Wv-VuZ"/>
-                    <constraint firstItem="BuH-bq-6MW" firstAttribute="leading" secondItem="Ez9-7g-FrV" secondAttribute="trailing" constant="20" id="w0M-JT-uDO"/>
-                    <constraint firstItem="Ez9-7g-FrV" firstAttribute="top" secondItem="m7v-uq-0f8" secondAttribute="top" constant="20" id="yIp-aq-dof"/>
-                    <constraint firstItem="Ez9-7g-FrV" firstAttribute="centerY" secondItem="m7v-uq-0f8" secondAttribute="centerY" id="ypb-02-gdp"/>
-                    <constraint firstAttribute="trailing" secondItem="CPc-Y0-ct5" secondAttribute="trailing" constant="10" id="zcb-h8-i1Z"/>
+                    <constraint firstAttribute="centerY" secondItem="bdG-v7-j91" secondAttribute="bottom" constant="2" id="1jO-5f-YCb"/>
+                    <constraint firstItem="Ez9-7g-FrV" firstAttribute="top" relation="greaterThanOrEqual" secondItem="m7v-uq-0f8" secondAttribute="top" constant="20" id="6SB-co-rGI"/>
+                    <constraint firstAttribute="trailing" secondItem="CPc-Y0-ct5" secondAttribute="trailing" constant="10" id="AAf-Nx-eT1"/>
+                    <constraint firstItem="CPc-Y0-ct5" firstAttribute="centerY" secondItem="m7v-uq-0f8" secondAttribute="centerY" id="CCr-mQ-IeQ"/>
+                    <constraint firstItem="bdG-v7-j91" firstAttribute="leading" secondItem="Ez9-7g-FrV" secondAttribute="trailing" constant="20" id="ECs-j0-kFi"/>
+                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="Ez9-7g-FrV" secondAttribute="bottom" constant="10" id="Ebg-Lp-eTE"/>
+                    <constraint firstItem="Ez9-7g-FrV" firstAttribute="centerY" secondItem="m7v-uq-0f8" secondAttribute="centerY" id="HIJ-J9-sdF"/>
+                    <constraint firstItem="BuH-bq-6MW" firstAttribute="top" secondItem="m7v-uq-0f8" secondAttribute="centerY" constant="2" id="LVe-7r-FcR"/>
+                    <constraint firstItem="Ez9-7g-FrV" firstAttribute="leading" secondItem="m7v-uq-0f8" secondAttribute="leading" constant="20" id="aOU-ol-cEZ"/>
+                    <constraint firstItem="CPc-Y0-ct5" firstAttribute="leading" secondItem="BuH-bq-6MW" secondAttribute="trailing" constant="10" id="ewu-ua-2zo"/>
+                    <constraint firstItem="BuH-bq-6MW" firstAttribute="leading" secondItem="Ez9-7g-FrV" secondAttribute="trailing" constant="20" id="fon-dF-gJe"/>
+                    <constraint firstItem="CPc-Y0-ct5" firstAttribute="leading" secondItem="bdG-v7-j91" secondAttribute="trailing" constant="20" id="tFH-8l-Tcc"/>
+                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="BuH-bq-6MW" secondAttribute="bottom" constant="20" id="tec-4w-Pt4"/>
+                    <constraint firstItem="bdG-v7-j91" firstAttribute="top" relation="greaterThanOrEqual" secondItem="m7v-uq-0f8" secondAttribute="top" constant="20" id="yFu-2b-nTF"/>
                 </constraints>
             </tableViewCellContentView>
             <connections>

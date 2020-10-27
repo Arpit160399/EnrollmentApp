@@ -177,12 +177,13 @@
                     <constraints>
                         <constraint firstAttribute="bottom" secondItem="krC-mj-hg6" secondAttribute="bottom" constant="702" id="7ME-hS-mOr"/>
                         <constraint firstItem="u3O-Tj-iC8" firstAttribute="leading" secondItem="TVE-4d-lL8" secondAttribute="leading" id="BV9-ow-1n5"/>
-                        <constraint firstItem="6AO-Ry-BhU" firstAttribute="leading" secondItem="TQ2-T1-rh7" secondAttribute="leading" constant="15" id="Gjv-tn-sAb"/>
+                        <constraint firstItem="6AO-Ry-BhU" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="TVE-4d-lL8" secondAttribute="leading" constant="15" id="Gjv-tn-sAb"/>
                         <constraint firstItem="krC-mj-hg6" firstAttribute="top" secondItem="aYi-TN-YRR" secondAttribute="top" constant="10" id="L8b-du-Zye"/>
+                        <constraint firstItem="6AO-Ry-BhU" firstAttribute="centerX" secondItem="TVE-4d-lL8" secondAttribute="centerX" id="Vmk-gd-bdf"/>
+                        <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="6AO-Ry-BhU" secondAttribute="trailing" constant="15" id="YPK-XJ-vDO"/>
                         <constraint firstItem="u3O-Tj-iC8" firstAttribute="top" secondItem="krC-mj-hg6" secondAttribute="bottom" constant="10" id="ZTl-FQ-J8Q"/>
                         <constraint firstAttribute="trailing" secondItem="u3O-Tj-iC8" secondAttribute="trailing" id="c6V-iE-UEw"/>
                         <constraint firstItem="krC-mj-hg6" firstAttribute="centerX" secondItem="aYi-TN-YRR" secondAttribute="centerX" id="dxE-wV-4hL"/>
-                        <constraint firstItem="TQ2-T1-rh7" firstAttribute="trailing" secondItem="6AO-Ry-BhU" secondAttribute="trailing" constant="15" id="fi1-XG-CBR"/>
                         <constraint firstItem="6AO-Ry-BhU" firstAttribute="top" secondItem="u3O-Tj-iC8" secondAttribute="bottom" constant="20" id="ivX-6l-TB2"/>
                     </constraints>
                     <viewLayoutGuide key="contentLayoutGuide" id="aYi-TN-YRR"/>
@@ -212,12 +213,13 @@
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
                 <constraint firstItem="TVE-4d-lL8" firstAttribute="leading" secondItem="dr5-2E-LTs" secondAttribute="leading" id="3hb-TL-yrJ"/>
-                <constraint firstItem="6AO-Ry-BhU" firstAttribute="width" secondItem="XQe-yo-rrY" secondAttribute="width" multiplier="0.927536" priority="999" id="7ka-YF-x3c"/>
+                <constraint firstItem="6AO-Ry-BhU" firstAttribute="width" secondItem="dr5-2E-LTs" secondAttribute="width" multiplier="0.927" id="4Oy-VF-yla"/>
                 <constraint firstItem="TVE-4d-lL8" firstAttribute="trailing" secondItem="dr5-2E-LTs" secondAttribute="trailing" id="8CS-Q3-uVY"/>
                 <constraint firstAttribute="bottom" secondItem="I0l-3b-qLb" secondAttribute="bottom" constant="20" id="QIF-fc-Xy2"/>
                 <constraint firstItem="I0l-3b-qLb" firstAttribute="leading" secondItem="dr5-2E-LTs" secondAttribute="leading" constant="10" id="Ruh-Ei-TFM"/>
                 <constraint firstItem="TVE-4d-lL8" firstAttribute="top" secondItem="dr5-2E-LTs" secondAttribute="top" id="TQX-Ms-OVB"/>
                 <constraint firstItem="u3O-Tj-iC8" firstAttribute="width" secondItem="XQe-yo-rrY" secondAttribute="width" id="cfG-FE-1Kr"/>
+                <constraint firstItem="TVE-4d-lL8" firstAttribute="centerX" secondItem="XQe-yo-rrY" secondAttribute="centerX" id="dds-BB-Jcf"/>
                 <constraint firstAttribute="bottom" secondItem="TVE-4d-lL8" secondAttribute="bottom" id="ouK-mm-PFu"/>
                 <constraint firstItem="dr5-2E-LTs" firstAttribute="trailing" secondItem="I0l-3b-qLb" secondAttribute="trailing" constant="10" id="pgD-4K-qHp"/>
             </constraints>

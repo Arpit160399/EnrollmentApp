@@ -7,7 +7,8 @@
 
 import UIKit
 
-class ViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
+class ViewController: UIViewController {
+    
     @IBOutlet var segemetMenu: SegmentControlView!
     @IBOutlet var collectionView: UICollectionView!
     let cellID = "ViewerCellID"
@@ -18,30 +19,32 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
         formPage.presentationController = self
         return [profilePage, formPage]
     }()
-    
+        
     override func viewDidLoad() {
         super.viewDidLoad()
         collectionView.dataSource = self
         collectionView.delegate = self
         collectionView.register(ViewerCell.self, forCellWithReuseIdentifier: cellID)
+        bindingSegementControl()
+        // Do any additional setup after loading the view.
+    }
+    
+    fileprivate func bindingSegementControl() {
         segemetMenu.selectedMenuAction = { [weak self] index in
             guard let self = self else { return }
             self.collectionView.scrollToItem(at: IndexPath(item: index, section: 0), at: .centeredHorizontally, animated: true)
         }
-        // Do any additional setup after loading the view.
     }
     
-    func scrollViewDidScroll(_ scrollView: UIScrollView) {}
-
     func scrollViewWillEndDragging(_ scrollView: UIScrollView, withVelocity velocity: CGPoint, targetContentOffset: UnsafeMutablePointer<CGPoint>) {
         let index = targetContentOffset.pointee.x / view.frame.width
         segemetMenu.menuSelected(index: Int(index))
     }
     
-//    override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
-//        collectionView.reloadData()
-//    }
-    
+}
+
+//MARK:- Data Source
+extension ViewController:UICollectionViewDataSource, UICollectionViewDelegateFlowLayout{
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return sections.count
     }
